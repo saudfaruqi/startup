@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>START UP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+  <link rel="stylesheet" type="text/css" href="Index.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+
+<header>
+        <a href="#" class="logo">LOGO</a>
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar"><i class="fa-solid fa-bars-staggered" style="color: rgb(0, 0, 0);"></i></label>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="file:///Users/saudahmedfaruqi/Documents/imp/web/index.html#">Home</a></li>
+                <li><a>About +</a>
+                    <ul>
+                        <li><a href="file:///Users/saudahmedfaruqi/Documents/imp/web/about.html">Our Goals</a></li>
+                        <li><a href="#">Our Shops</a></li>
+                        <li><a href="#">Our Employees +</a>
+                            <ul>
+                                <li><a href="#">Workers</a>
+                                <li><a href="#">Helpers</a>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a href="file:///Users/saudahmedfaruqi/Documents/imp/web/services.html">Services</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </nav>
+
+</header>
+
+
+
+<div class="progress-container">
+  <div class="progress-bar" id="myBar"></div>
+</div>  
+
+<script>
+  // When the user scrolls the page, execute myFunction 
+  window.onscroll = function()
+   {
+    myFunction()
+   };
+  
+  function myFunction() 
+  {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
+  }
+  </script>
+
+
+
+
+
+<section class="home">
+    <div class="hero">
+        <h2>Super <span>value</span> deals</h2>
+        <h4> has been the industry's standard dummy text ever since the 1500s</h4>
+        <h6>when an unknown printer took a galley of type and scrambled it to make a type specimen book.</h6>
+    </div>
+
+
+
+
+    <div class="slideshow">
+
+        <div class="mySlides fade">
+          <img class="simg" src="design1.png" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img class="simg" src="design2.png" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img class="simg" src="design3.png" style="width:100%">
+        </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+
+</section>
+
+
+  <script>
+ let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3500); // Change image every 2 seconds
+}
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+<h1 class="myteam">Our Team</h1>
+
+<section class="card-section">
+<div class="card" style=" --img : url(03.png)">
+  <img src="03.png" alt="">
+  <div class="info">
+    <div class="name">Unair Faridi</div>
+    <div class="title">CEO</div>
+    <div class="social1">
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-twitter"></i>
+
+    </div>
+  </div>
+</div>
+
+<div class="card" style="--img: url( 03.png)">
+  <img src="03.png" alt="">
+  <div class="info">
+    <div class="name">Saud Ahmed</div>
+    <div class="title">Founder</div>
+    <div class="social1">
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-twitter"></i>
+
+    </div>
+  </div>
+</div>
+
+<div class="card" style="--img: url(03.png)">
+  <img src="03.png" alt="">
+  <div class="info">
+    <div class="name">Muzammil Javed</div>
+    <div class="title">Co-Founder</div>
+    <div class="social1">
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-twitter"></i>
+
+    </div>
+  </div>
+</div>
+
+
+</section>
+
+
+
+
+
+
+<section class="product1">
+  <h2>SERVICES</h2>
+  <p>YOUR NEED IS OUR DEED</p>
+
+  <div class="pro-container">
+
+    <div class="card1">
+      <img src="img4.png" alt="Denim Jeans">
+
+      <div class="des">
+        <span>MECHANIC</span>
+        <h4>Rs:500</h4>
+        <h5>Service charges.. <br> Price depends on work</h5>
+        <p><button><a href="https://www.upwork.com/freelancers/~01842dd3e8231a0047?p=1558726022716018688">know more</a></button></p>
+      </div>
+    </div>
+
+    <div class="card1">
+      <img src="img2.png" alt="Denim Jeans">
+
+      <div class="des">
+        <span>PLUMBER</span>
+        <h4>Rs:300</h4>
+        <h5>Service charges.. <br> Price depends on work</h5>
+        <p><button><a href="">know more</a></button></p>
+      </div>
+    </div>
+
+    <div class="card1">
+      <img src="img3.png" alt="Denim Jeans">
+
+      <div class="des">
+        <span>CARPENTER</span>
+        <h4>Rs:600</h4>
+        <h5>Service charges.. <br> Price depends on work</h5>
+        <p><button><a href="">know more</a></button></p>
+      </div>
+    </div>
+
+    <div class="card1">
+      <img src="img1.png" alt="Denim Jeans">
+
+      <div class="des">
+        <span>ELECTRICIAN</span>
+        <h4>Rs:400</h4>
+        <h5>Service charges.. <br> Price depends on work</h5>
+        <p><button><a href="">know more</a></button></p>
+      </div>
+    </div>
+
+ 
+
+
+  </div>
+
+</section>
+
+
+
+
+<section class="banner">
+  <h4>Repair Services</h4>
+  <h2>Up to<span> 20% off</span> On all type of Services</h2>
+  <button class="normal">Explore More</button>
+
+</section>
+
+
+
+
+
+
+
+
+<div class="testimonials">
+  <div class="inner">
+    <h1>Testimonial</h1>
+    <div class="border"></div>
+
+     <div class="border-row">
+       <div class="border-col">
+        <div class="testimonial">
+         <img src="wall.png" alt="">
+        
+        <div class="border-name">Full Name</div>
+        
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+          Dolore et, dolores quisquam illo, repudiandae aliquam eum minus, 
+          quo iusto id doloremque. Rerum asperiores voluptatibus susc</p>
+
+       </div>
+      </div>
+
+
+
+       <div class="border-col">
+        <div class="testimonial">
+         <img src="wall1.png" alt="">
+        
+        <div class="border-name">Full Name</div>
+        
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+          Dolore et, dolores quisquam illo, repudiandae aliquam eum minus, 
+          quo iusto id doloremque. Rerum asperiores voluptatibus susc</p>
+
+       </div>
+      </div>
+
+
+
+       <div class="border-col">
+        <div class="testimonial">
+         <img src="wall2.png" alt="">
+        
+        <div class="border-name">Full Name</div>
+        
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+          Dolore et, dolores quisquam illo, repudiandae aliquam eum minus, 
+          quo iusto id doloremque. Rerum asperiores voluptatibus susc</p>
+
+       </div>
+      </div>
+
+     </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<section class="banner2">
+  <div class="banner-box">
+    <h4>crazy deals</h4>
+    <h2>buy 1 get 1 free</h2>
+    <span>the best services in very low price</span>
+    <button class="white">learn more</button>
+  </div>
+
+  <div class="banner-box banner-box2">
+    <h4>new deals</h4>
+    <h2>buy 2 get 1 free</h2>
+    <span>we help you in very low price</span>
+    <button class="white">know more</button>
+  </div>
+
+</section>
+
+
+
+
+<section class="banner3">
+
+  <div class="banner-box">
+    <h2>365 DAYS SERVICE</h2>
+    <h3>rainy weather -20% OFF</h3>
+  </div>
+
+  <div class="banner-box banner-box2">
+    <h2>365 DAYS SERVICE</h2>
+    <h3>snowy weather -50% OFF</h3>
+  </div>
+
+  <div class="banner-box banner-box3">
+    <h2>365 DAYS SERVICE</h2>
+    <h3>special day -30% OFF</h3>
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Company</h4>
+
+                <ul>
+                    <li><a href="#">About Founder</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Affiliated Shops</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    
+                </ul>
+
+            </div>
+
+            <div class="footer-col">
+                <h4>Get Help</h4>
+
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Payment Options</a></li>
+                    <li><a href="#">Customer Service</a></li>
+                    <li><a href="#">Policy</a></li>
+                    <li><a href="#">Terms and Condition</a></li>
+                </ul>
+
+            </div>
+
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social">
+                    <a href="#"> <i class="fab fa-facebook-f"></i></a>
+                    <a href="#"> <i class="fab fa-instagram"></i></a>
+                    <a href="#"> <i class="fab fa-youtube"></i></a>
+                    <a href="#"> <i class="fab fa-twitter"></i></a>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</footer>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+
+</body>
+</html>
